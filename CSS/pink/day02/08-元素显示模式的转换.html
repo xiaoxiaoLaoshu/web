@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    a {
+      /* 把行内元素转换为块级元素 */
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+    }
+    div {
+      /* 此时为行内元素设置 宽度和高度 直接报错 */
+      /* width: 200px;
+      height: 200px; */
+      display: inline;
+      background-color: pink;
+    }
+    span {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">空链接</a>
+  <a href="#">空链接</a>
+  <a href="#">空链接</a>
+  <a href="#">空链接</a>
+  <div>我是块级元素转换为行内元素</div>
+  <div>我是块级元素转换为行内元素</div>
+  <span>行内元素转换行内块元素</span>
+  <span>行内元素转换行内块元素</span>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 链接伪类 */
+    /* 未访问的链接 */
+    /* a:link {
+      color: #333;
+      text-decoration: none;
+    } */
+    /* 已访问的链接 */
+    /* a:visited {
+      color: yellowgreen;
+      text-decoration: overline;
+    } */
+    /* 鼠标经过的链接 */
+    /* a:hover {
+      color: skyblue;
+      text-decoration: underline;
+    } */
+    /* 鼠标按下，但是没有弹起的链接 */
+    /* a:active {
+      color: greenyellow;
+    } */
+    /* 链接伪类的使用要严格使用如上的顺序，不然不能生效 */
+    /* 通常只使用 a 和 a:hover 两种选择器 */
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover {
+      color: skyblue;
+      text-decoration: underline;
+    }
+    /* :focus 伪类选择器，选择获取光标的表单元素 */
+    input:focus {
+      border-color: blue;
+    }
+  </style>
+
+</head>
+
+<body>
+  <a href="#">小猪佩奇</a>
+  <a href="#">佩奇</a>
+  <a href="#">小红</a>
+  <input type="text" name="" id="">
+  <input type="text" name="" id="">
+  <input type="text" name="" id="">
+</body>
+
+</html>
