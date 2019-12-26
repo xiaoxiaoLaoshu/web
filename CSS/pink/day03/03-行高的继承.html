@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      /* 在 body 中设置统一的样式，可以避免在其子元素中再次添加相同的样式，这是一种抽象的写法，可以节省代码量。 */
+      color: pink;
+      /* font: 12px/24px 'Microsoft YaHei'; */
+      /* 设置行高为 1.5 这里的具体数值是根据该元素的字体大小来设置的，因此可以为每个 子元素 设定自己的行高 */
+      font: 12px/1.5 'Microsoft YaHei';
+    }
+    div {
+      /* 此时该元素的行高为 20 * 1.5 = 30 */
+      font-size: 20px;
+    }
+    p {
+      /* 此时该元素的行高为 18 * 1.5 = 27 */
+      font-size: 18px;
+    }
+    /* 而 li 的行高是 最终继承来自 body 的 12 * 1.5 = 18 */
+  </style>
+</head>
+
+<body>
+  <div>粉红色的回忆</div>
+  <p>粉红色的回忆</p>
+  <ul>
+    <li>小敏在那里啊</li>
+  </ul>
+</body>
+
+</html>

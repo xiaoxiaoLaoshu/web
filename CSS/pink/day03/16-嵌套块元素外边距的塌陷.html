@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 为了实现子块元素在父块元素中居中显示，如此使用外边距就没有用了。 */
+    /* 解决方案 */
+    /* 1. 设置父级元素的边框  */
+    /* 2. 设置父级元素的内边距 */
+    /* 3. 添加父级元素的 overflow：hidden; 属性 */
+    .father {
+      width: 200px;
+      height: 200px;
+      background-color: purple;
+      margin-top: 20px;
+      /* 为了让边框没有显示出来，将边框设置为透明的 */
+      /* border: 1px solid transparent; */
+      /* padding: 1px; */
+      overflow: hidden;
+    }
+    .son {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      margin: 25% auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="father">
+    <div class="son">
+
+    </div>
+  </div>
+</body>
+
+</html>

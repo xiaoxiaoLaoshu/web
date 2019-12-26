@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .box {
+      width: 298px;
+      height: 415px;
+      margin: 100px auto;
+      background-color: #fff;
+    }
+
+    .box img {
+      width: 100%;
+    }
+
+    .review {
+      height: 70px;
+      font: 14px 'Micosoft YaHei';
+      /* 因为这个段落没有指定 宽度 ，所以使用 内边距没有撑开盒子宽度 */
+      padding: 0px 28px;
+      /* 为了简便，没有使用 内边距来让文字和上面的图片分离，而是使用外边距来达到效果 */
+      margin-top: 30px;
+    }
+
+    .user {
+      font-size: 12px;
+      color: #a5a7a9;
+      padding: 0px 28px;
+      margin-top: 20px;
+    }
+    .info {
+      font-size: 14px;
+      padding: 0 28px;
+      margin-top: 15px;
+    }
+    .info h4 {
+      display: inline-block;
+      font-weight: 400;
+    }
+    .info span {
+      color: #ffa461;
+    }
+    .info em {
+      font-style: normal;
+      padding-left: 5px;
+      padding-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img src="images/one.png">
+    <p class="review">
+      快递牛，整体不错蓝牙可以说秒连，红米给力
+    </p>
+    <div class="user">来自于 117384232 的评价</div>
+    <div class="info">
+      <h4>Redmi AirDots真无线蓝...</h4>
+      <em>|</em>
+      <span>99.9元</span>
+    </div>
+  </div>
+</body>
+
+</html>

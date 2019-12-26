@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* CSS 的优先级 解决同一个元素被不用选择器选中使用的相同属性冲突问题。优先级相同，采用层叠性原则。否则采用优先级原则 */
+    /* 继承的属性或 通配符选择器的权重为 0 */
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    /* 元素选择器 的权重为 1 */
+    div {
+      color: red;
+    }
+    /* 类选择器 或 伪类选择器 的权重为 10 */
+    .test {
+      color: pink;
+    }
+    /* ID选择器 的权重为 100 */
+    #div1 {
+      color: skyblue !important;
+    }
+    /* 行内样式/ style="" 的权重为 1000 */
+    /* 但是在某个属性中 添加了 ！important 权重为 无穷大 */
+    /* 复合选择器可以让权重叠加问题 */
+    li {
+      color: red;
+    }
+    ul li {
+      color: pink;
+    }
+    .test01 li {
+      color: skyblue;
+    }
+    /* li 的最终显示为 天蓝色，这里就是 权重叠加的体现 */
+  </style>
+</head>
+
+<body>
+  <div class="test" id="div1" style="color: blueviolet;">
+    你笑起来真好看
+  </div>
+  <ul class="test01">
+    <li>
+      小敏在犹豫。
+    </li>
+  </ul>
+</body>
+
+</html>

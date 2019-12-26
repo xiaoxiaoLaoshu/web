@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* CSS 的层叠性，解决选择器的相同属性冲突问题，解决方案是采用就近原则。 */
+    div {
+      color: red;
+      font-size: 12px;
+    }
+    div {
+      color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div>长江后浪推前浪，前浪死在沙滩上。</div>
+</body>
+
+</html>

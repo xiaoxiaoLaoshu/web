@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    a {
+      /* 使用下面的属性无法精确控制盒子的大小 */
+      /* text-indent: 2em; */
+      /* 改为 内边距来控制文字与边框的对齐 */
+      /* 由于内边距修改会导致盒子大小的改变，所以要使用原来盒子的宽度 减去 定义的内边距的宽度 得到现在盒子的宽度 */
+      padding-left: 20px;
+      display: block;
+      /* 原来盒子的宽度是 160px 现在添加了内边距的 20 px 宽度，所以改为 140px 宽度 */
+      width: 140px;
+      height: 35px;
+      color: white;
+      background-color: #505252;
+      text-decoration: none;
+      font: 12px/35px 'Micosoft Yahei';
+    }
+    a:hover {
+      background-color: #ff6400;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">手机 电话卡</a>
+  <a href="#">电视 盒子</a>
+  <a href="#">笔记本 平板</a>
+  <a href="#">出行 穿戴</a>
+  <a href="#">智能 路由器</a>
+  <a href="#">健康 儿童</a>
+  <a href="#">耳机 音响</a>
+</body>
+
+</html>
