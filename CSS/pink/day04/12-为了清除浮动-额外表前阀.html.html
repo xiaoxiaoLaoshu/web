@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- 在实际开发中，父盒子的高度通常是不确定的，通常是由浮动元素的高度来决定。为了达到这样的效果，就需要清除浮动对父盒子的影响,原理是闭合效应 -->
+  <!-- 清除浮动的条件 -->
+  <!-- 1.父盒子没有设置宽度
+  2.子盒子是浮动的
+  3.影响到后面网页的布局 -->
+  <style>
+    .box {
+      width: 980px;
+      background-color: pink;
+    }
+    .damao {
+      float: left;
+      width: 300px;
+      height: 300px;
+      background-color: purple;
+    }
+    .ermao {
+      float: left;
+      width: 200px;
+      height: 300px;
+      background-color: skyblue;
+    }
+    /* 使用一个空标签来实现效果，这个空标签一定要是 块元素标签，优点简单容易。缺点多处要清除浮动时，多处许多无意义的标签，破坏网页的语义化 */
+    .clear {
+      clear: both;
+    }
+    .footer {
+      height: 50px;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="ermao">二毛</div>
+    <div class="clear">
+
+    </div>
+  </div>
+  <div class="footer">
+    footer
+  </div>
+</body>
+
+</html>

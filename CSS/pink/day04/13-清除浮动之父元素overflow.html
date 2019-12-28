@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- 在实际开发中，父盒子的高度通常是不确定的，通常是由浮动元素的高度来决定。为了达到这样的效果，就需要清除浮动对父盒子的影响 -->
+  <style>
+    .box {
+      width: 980px;
+      background-color: pink;
+      /* 使用 overflow 属性来清除浮动的影响 优点代码简洁，缺点无法显示本应溢出的部分 */
+      overflow: hidden;
+    }
+    .damao {
+      float: left;
+      width: 300px;
+      height: 300px;
+      background-color: purple;
+    }
+    .ermao {
+      float: left;
+      width: 200px;
+      height: 300px;
+      background-color: skyblue;
+    }
+    
+    .footer {
+      height: 50px;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="damao">大毛</div>
+    <div class="ermao">二毛</div>
+    </div>
+  </div>
+  <div class="footer">
+    footer
+  </div>
+</body>
+
+</html>

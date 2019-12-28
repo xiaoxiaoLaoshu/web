@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 先设定父盒子的位置，在设定浮动元素的位置，浮动元素的大小要配合父盒子的大小 */
+    .box {
+      width: 1200px;
+      height: 460px;
+      background-color: pink;
+    }
+    .left {
+      width: 260px;
+      height: 460px;
+      float: left;
+      background-color: purple;
+    }
+    .right {
+      width: 940px;
+      height: 460px;
+      float: left;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</body>
+
+</html>

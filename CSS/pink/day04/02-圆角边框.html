@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      border-radius: 10px;
+    }
+    .yuanxing {
+      width: 200px;
+      height: 200px;
+      /* 将盒子变成圆形，首先盒子是正方形的，然后将 边框半径设置为 盒子宽度的一半即可 */
+      /* border-radius: 100px; */
+      /* 50%就是盒子宽度和高度的一半 */
+      border-radius: 50%;
+    }
+    .juxing {
+      width: 200px;
+      height: 100px;
+      /* 将盒子变成矩形圆角，设置 边框半径 为 盒子高度的一半即可 */
+      border-radius: 50px;
+    }
+    .radius {
+      width: 200px;
+      height: 100px;
+      /* 可以设置不同的方位的圆角半径 */
+      border-radius: 10px 20px 30px 40px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div></div>
+  <div class="yuanxing">
+    圆形
+  </div>
+  <div class="juxing">
+    矩形
+  </div>
+  设置不同的圆角
+  <div class="radius"></div>
+
+</body>
+
+</html>

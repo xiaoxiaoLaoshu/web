@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 设置了浮动的盒子，对齐方式是以顶端方式对其的，当盒子的大小不同时，这里出现了一行放不下的问题，会令起一行排列，但是这里出现了问题放不下时，最后一个排列在倒数第二个的后面 */
+    div {
+      width: 200px;
+      height: 200px;
+      float: left;
+    }
+    .one {
+      background-color: pink;
+      height: 300px;
+    }
+    .two {
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="one"></div>
+</body>
+
+</html>

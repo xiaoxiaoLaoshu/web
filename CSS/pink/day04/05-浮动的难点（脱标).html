@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 设置了 浮动属性的盒子会脱离标准流，移动到指定的位置（脱标） 浮动的盒子不再保留原来的位置。 但是后面盒子里面的文字不会被浮动的盒子遮住 */
+    .first {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      float: left;
+    }
+    .second {
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="first">
+    浮动的盒子
+  </div>
+  <div class="second">
+    标准流的盒子,文字会被遮住吗？？？？？
+  </div>
+</body>
+
+</html>
