@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 绝对定位的特点 */
+    /* 1. 指定绝对定位的元素没有祖级元素或祖级元素没有添加相对定位属性，那么绝对定位的元素将以浏览器标准流为参照点 */
+    .box1 {
+      position: absolute;
+      top: 100px;
+      right: 200px;
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="father">
+    <div class="box1">
+      以浏览器标准流为参照点
+    </div>
+  </div>
+</body>
+
+</html>

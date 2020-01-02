@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 绝对定位会以最近添加了相对定位的父级元素为参照点 */
+    /* 添加了绝对定位的元素会脱标 */
+    .garderfather {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background-color: hotpink;
+    }
+    .father {
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+    }
+    .box {
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="garderfather">
+    <div class="father">
+      <div class="box">
+        绝对定位
+      </div>
+      <div class="box1">
+        这是个脱标的测试
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

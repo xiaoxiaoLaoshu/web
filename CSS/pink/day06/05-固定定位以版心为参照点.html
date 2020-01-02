@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .w {
+      margin: 0 auto;
+      width: 800px;
+      height: 1600px;
+      background-color: pink;
+    }
+    .fixed {
+      /* 算法 */
+      /* 1.先设定为 可视窗口 的 50% */
+      position: fixed;
+      left: 50%;
+      /* 2.在使用 margin-left 走 版心的 50% 像素 */
+      margin-left: 405px;
+      width: 20px;
+      height: 100px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed">
+    广告
+  </div>
+  <div class="w">
+    版心盒子 800像素
+  </div>
+</body>
+
+</html>
